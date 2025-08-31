@@ -12,7 +12,13 @@ const Skills = () => {
     {
       icon: <Database size={24} />,
       title: "Backend Development",
-      skills: ["Node.js", "Python", "Express", "PostgreSQL", "MongoDB", "Redis"],
+      skills: ["Node.js", "Python", "Express", "Next.js", "PHP", "Flask", ".NET", "Spring Boot" ],
+      description: "Creating robust APIs and server-side applications with scalable architecture"
+    },
+    {
+      icon: <Database size={24} />,
+      title: "Database",
+      skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Firebase"],
       description: "Creating robust APIs and server-side applications with scalable architecture"
     },
     {
@@ -24,7 +30,7 @@ const Skills = () => {
     {
       icon: <Smartphone size={24} />,
       title: "Mobile Development",
-      skills: ["React Native", "Flutter", "iOS", "Android", "PWA", "Expo"],
+      skills: ["React Native", "Flutter", "iOS", "Android", "Expo"],
       description: "Cross-platform mobile applications with native performance"
     },
     {
@@ -77,11 +83,11 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="skills-stats mt-8">
+        {/* <div className="skills-stats mt-8">
           <div className="stats-grid grid grid-2">
             <div className="stat-card card text-center">
               <div className="stat-number text-3xl font-bold gradient-text mb-2">
-                50+
+                500000+
               </div>
               <div className="stat-label text-muted">
                 Projects Completed
@@ -96,7 +102,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <style jsx>{`

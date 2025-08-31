@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
-// import emailjs from 'emailjs-com'; // Uncomment when you set up EmailJS
+import emailjs from 'emailjs-com'; // Uncomment when you set up EmailJS
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,20 +27,18 @@ const Contact = () => {
 
     try {
       // EmailJS configuration - Replace with your actual service details
-      /*
       await emailjs.send(
-        'YOUR_SERVICE_ID',    // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID',   // Replace with your EmailJS template ID
+        'service_g7nev8c',    // Replace with your EmailJS service ID
+        'template_3j7w5i9',   // Replace with your EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          to_email: 'your.email@example.com' // Replace with your email
+          to_email: 'mauricio.macias2535@gmail.com' // Replace with your email
         },
-        'YOUR_PUBLIC_KEY'     // Replace with your EmailJS public key
+        'n_TN34Drjh4LlTtHT'     // Replace with your EmailJS public key
       );
-      */
 
       // Simulated success for demo purposes
       await new Promise(resolve => setTimeout(resolve, 1500));
@@ -59,20 +57,20 @@ const Contact = () => {
     {
       icon: <Mail size={20} />,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      value: 'mauricio.macias2535@gmail.com',
+      href: 'mailto:mauricio.macias2535@gmail.com'
     },
     {
       icon: <Phone size={20} />,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+1 (714) 469-0029',
+      href: 'tel:+17144690029'
     },
     {
       icon: <MapPin size={20} />,
       label: 'Location',
-      value: 'San Francisco, CA',
-      href: 'https://maps.google.com/?q=San+Francisco,CA'
+      value: 'Simi Valley, CA',
+      href: 'https://www.google.com/maps/place/Simi+Valley,+CA'
     }
   ];
 
@@ -80,18 +78,13 @@ const Contact = () => {
     {
       icon: <Github size={20} />,
       label: 'GitHub',
-      href: 'https://github.com/yourusername'
+      href: 'https://github.com/TheErrorMaster'
     },
     {
       icon: <Linkedin size={20} />,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourusername'
+      href: 'https://www.linkedin.com/in/mauricio-macias-679681185/'
     },
-    {
-      icon: <Twitter size={20} />,
-      label: 'Twitter',
-      href: 'https://twitter.com/yourusername'
-    }
   ];
 
   return (

@@ -1,76 +1,66 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 
+
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, shopping cart, and order processing.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
+      title: "Flair Airlines",
+      description: "Flair Airlines is a leading Canadian ultra low-cost carrier, well known for offering the best flight deals in Canada to over 35 destinations across North America. We are currently in the process of revamping our website and mobile app.",
+      image: "https://theerrormaster.github.io/images/flair-logo.png",
+      technologies: ["React", "React Native", "Node.js", "Java", "MongoDB", "Stripe", "Redux", "Express", "AWS"],
       category: "fullstack",
-      githubUrl: "https://github.com/yourusername/ecommerce-platform",
-      liveUrl: "https://ecommerce-demo.vercel.app",
+      // githubUrl: "https://github.com/yourusername/ecommerce-platform",
+      liveUrl: "https://www.flyflair.com/",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and progress tracking. Built with modern React and Firebase.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "Firebase", "Material-UI", "TypeScript", "Socket.io"],
-      category: "frontend",
-      githubUrl: "https://github.com/yourusername/task-manager",
-      liveUrl: "https://taskmanager-demo.netlify.app",
+      title: "GO7",
+      description: "GO7 is an innovative aviation technology company focused on optimizing operations and management. Its platform features real-time flight tracking, maintenance scheduling, and an interactive dashboard for data visualization.",
+      image: "https://theerrormaster.github.io/images/go7.png",
+      technologies: ["React", "Firebase", "Spring Boot", "Ppostgresql","TypeScript", "Socket.io", ],
+      category: "fullstack",
+      // githubUrl: "https://github.com/yourusername/task-manager",
+      liveUrl: "https://go7.io/",
       featured: true
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and weather alerts. Integrates with multiple weather APIs for accurate data.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Vue.js", "OpenWeather API", "Chart.js", "SASS", "PWA"],
-      category: "frontend",
-      githubUrl: "https://github.com/yourusername/weather-dashboard",
-      liveUrl: "https://weather-dashboard-demo.vercel.app",
+      title: "Coastal Viticultural Consultants",
+      description: "Coastal Viticultural Consultants helps local farmers manage their vineyards. The app collects real-time vineyard measurements and detects Grape Powdery Mildew spores before infections occur. It provides growers with the information needed to improve the efficiency and effectiveness of their spray programs.",
+      image: "https://theerrormaster.github.io/images/spore_trap_graph.jpeg",
+      technologies: ["PHP", "OpenWeather API", "Javascript","MySQL", "SASS", "PWA", ".NET"],
+      category: "fullstack",
+      // githubUrl: "https://github.com/yourusername/weather-dashboard",
+      liveUrl: "https://coastalvit.com/",
       featured: false
     },
     {
       id: 4,
-      title: "API Gateway Service",
-      description: "A scalable API gateway built with Node.js and Express, featuring rate limiting, authentication, request/response transformation, and monitoring.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Node.js", "Express", "Redis", "JWT", "Docker", "Nginx"],
-      category: "backend",
-      githubUrl: "https://github.com/yourusername/api-gateway",
-      liveUrl: "",
+      title: "Neatmon",
+      description: "Neatmon is a manufacturer of automated control and monitoring devices designed to provide flexible monitoring solutions for the agricultural and industrial markets.",
+      image: "https://play-lh.googleusercontent.com/D-XZJfHtzAFlT985VgYp8ywyyr95XZGIvgszY_HTAZhKTfeHgxFWZ37MzMB8c_0BGQw=s188-rw",
+      technologies: [ "Express", "Redis", "Swift", "JWT", "Docker", "Nginx"],
+      category: "fullstack",
+      // githubUrl: "https://github.com/yourusername/api-gateway",
+      liveUrl: "https://about.neatmon.com/#home",
       featured: false
     },
     {
       id: 5,
-      title: "Social Media Analytics",
-      description: "A comprehensive analytics dashboard for social media metrics with data visualization, automated reporting, and performance insights.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "D3.js", "Python", "PostgreSQL", "FastAPI", "AWS"],
+      title: "SympToDialog",
+      description: "SympToDialog is an AI-powered chatbot designed to simulate patient interactions during medical appointments. It offers a diverse range of personas, incorporating factors such as age, sexual orientation, ethnicity, cultural background, sexual behavior, geographic location, and biological characteristics.",
+      image: "https://theerrormaster.github.io/images/sympToDialog.jpg",
+      technologies: ["React", "Firebase", "Next.js"],
       category: "fullstack",
-      githubUrl: "https://github.com/yourusername/social-analytics",
-      liveUrl: "https://social-analytics-demo.herokuapp.com",
+      // githubUrl: "https://github.com/yourusername/social-analytics",
+      liveUrl: "https://devpost.com/software/symptodialog",
       featured: true
     },
-    {
-      id: 6,
-      title: "Mobile Fitness Tracker",
-      description: "A cross-platform mobile app for fitness tracking with workout plans, progress monitoring, and social features. Built with React Native.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React Native", "Expo", "SQLite", "Redux", "Firebase", "iOS/Android"],
-      category: "mobile",
-      githubUrl: "https://github.com/yourusername/fitness-tracker",
-      liveUrl: "https://play.google.com/store/apps/fitness-tracker",
-      featured: false
-    }
   ];
 
   const categories = [
@@ -101,7 +91,7 @@ const Projects = () => {
         </div>
 
         {/* Featured Projects Grid */}
-        <div className="featured-projects mb-16">
+        {/* <div className="featured-projects mb-16">
           <h3 className="featured-title text-2xl font-semibold mb-8 text-center">
             ⭐ Featured Work
           </h3>
@@ -153,10 +143,10 @@ const Projects = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Project Filter */}
-        <div className="project-filter mb-8">
+        {/* <div className="project-filter mb-8">
           <div className="filter-buttons">
             {categories.map((category) => (
               <button
@@ -168,14 +158,14 @@ const Projects = () => {
               </button>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* All Projects Grid */}
-        <div className="projects-grid grid grid-3">
+        <div className="projects-grid grid grid-1">
           {filteredProjects.map((project) => (
             <div key={project.id} className="project-card card">
               <div className="project-image">
-                <img src={project.image} alt={project.title} />
+                <img src={project.image} alt={project.title}  />
                 <div className="project-overlay">
                   <div className="project-links">
                     {project.githubUrl && (
@@ -196,10 +186,10 @@ const Projects = () => {
                   {project.title}
                 </h4>
                 <p className="project-description text-muted text-sm mb-3">
-                  {project.description.slice(0, 120)}...
+                  {project.description}
                 </p>
                 <div className="project-technologies">
-                  {project.technologies.slice(0, 3).map((tech, index) => (
+                  {project.technologies.map((tech, index) => (
                     <span key={index} className="tech-tag small">
                       {tech}
                     </span>
@@ -214,7 +204,7 @@ const Projects = () => {
           <p className="cta-text text-muted mb-4">
             Want to see more of my work?
           </p>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="button button-secondary">
+          <a href="https://github.com/TheErrorMaster" target="_blank" rel="noopener noreferrer" className="button button-secondary">
             <Github size={20} />
             View All on GitHub
           </a>
@@ -255,7 +245,7 @@ const Projects = () => {
 
         .project-image {
           position: relative;
-          height: 200px;
+          height: 250px;
           overflow: hidden;
         }
 
@@ -335,7 +325,8 @@ const Projects = () => {
         .project-technologies {
           display: flex;
           flex-wrap: wrap;
-          gap: 8px;
+          gap: 10px;
+          padding: 10px 0px;
         }
 
         .tech-tag {
@@ -412,9 +403,6 @@ const Projects = () => {
           transform: translateY(-2px);
         }
 
-        .project-card .project-image {
-          height: 160px;
-        }
 
         .projects-cta {
           border-top: 1px solid var(--border);

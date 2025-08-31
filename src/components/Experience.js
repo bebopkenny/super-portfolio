@@ -4,69 +4,72 @@ import { MapPin, Calendar, ExternalLink } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "Tech Innovations Inc.",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      title: "Full Stack Developer",
+      company: "GO7",
+      location: "Irvine, CA",
+      period: "Feb 2022 - Present",
       type: "Full-time",
-      description: "Led development of scalable web applications serving 100K+ users. Architected microservices infrastructure and mentored junior developers.",
+      description: "Developed and maintained multiple client projects from concept to deployment. Collaborated with design and product teams to deliver exceptional user experiences.",
       achievements: [
         "Improved application performance by 40% through optimization",
-        "Led team of 5 developers on major product releases",
         "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Designed and built RESTful APIs handling 1M+ requests daily"
+        "Designed and built RESTful APIs handling 1M+ requests daily",
+        "Integrated third-party APIs and payment systems",
+        "Ability to manage multiple projects simultaneously and complete tasks in a timely manner",
       ],
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS", "Docker", "TypeScript"],
-      website: "https://techinnovations.com"
+      technologies: ["React", "Node.js", "PostgreSQL", "Spring Boot", "Docker", "TypeScript", "Firebase"],
+      website: "https://go7.io/"
     },
     {
       title: "Full Stack Developer",
-      company: "StartupXYZ",
-      location: "Austin, TX",
-      period: "2021 - 2022",
+      company: "Howe Neat, Inc",
+      location: "Remote",
+      period: "Jun 2021 - Feb 2022",
       type: "Full-time",
       description: "Developed and maintained multiple client projects from concept to deployment. Collaborated with design and product teams to deliver exceptional user experiences.",
       achievements: [
         "Built 15+ responsive web applications from scratch",
         "Reduced page load times by 50% through performance optimization",
-        "Integrated third-party APIs and payment systems",
-        "Maintained 99.9% uptime across all deployed applications"
-      ],
-      technologies: ["Vue.js", "Express.js", "MongoDB", "Firebase", "Stripe", "SASS"],
-      website: "https://startupxyz.com"
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Agency Pro",
-      location: "Remote",
-      period: "2020 - 2021",
-      type: "Contract",
-      description: "Created responsive websites and web applications for various clients. Focused on modern frontend technologies and pixel-perfect implementations.",
-      achievements: [
-        "Delivered 20+ client projects on time and within budget",
+        "Maintained 99.9% uptime across all deployed applications",
         "Increased client satisfaction scores by 25%",
-        "Implemented modern design systems and component libraries",
-        "Optimized websites for SEO achieving top 3 rankings"
+        "Ensure software stability via regression, support quality assurance, and identify bugs"
       ],
-      technologies: ["React", "Next.js", "Tailwind CSS", "Figma", "WordPress", "GraphQL"],
-      website: "https://digitalagencypro.com"
+      technologies: ["Javascript", "Express.js", "MongoDB", "Firebase", "Stripe", "SASS"],
+      website: "https://www.howeneat.com/"
     },
     {
-      title: "Junior Web Developer",
-      company: "Local Web Solutions",
-      location: "Portland, OR",
-      period: "2019 - 2020",
+      title: "Web Administrator Intern",
+      company: "ANSgear Paintball",
+      location: "Simi Valley, CA",
+      period: "June 2020 - Oct 2020",
       type: "Full-time",
-      description: "Started my professional journey building websites for small businesses. Learned best practices and gained experience with various web technologies.",
+      description: "Responsible for new website launch including layouts visual appearance, usability and content for all new properties acquired.",
       achievements: [
-        "Completed 30+ small business websites",
+        "Strong front-end skills in HTML, CSS, JavaScript",
+        "Ability to write well-documented code",
+        "Implemented modern design systems and component libraries",
+        "Optimized websites for SEO achieving top 3 rankings",
         "Learned and implemented responsive design principles",
-        "Provided ongoing maintenance and support for clients",
-        "Collaborated with designers to translate mockups to code"
       ],
-      technologies: ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"],
-      website: "https://localwebsolutions.com"
-    }
+      technologies: ["Javascript", "HTML", "CSS", "WordPress"],
+      website: "https://ansgear.com/"
+    },
+    // {
+    //   title: "Junior Web Developer",
+    //   company: "Local Web Solutions",
+    //   location: "Portland, OR",
+    //   period: "2019 - 2020",
+    //   type: "Full-time",
+    //   description: "Started my professional journey building websites for small businesses. Learned best practices and gained experience with various web technologies.",
+    //   achievements: [
+    //     "Completed 30+ small business websites",
+    //     "Learned and implemented responsive design principles",
+    //     "Provided ongoing maintenance and support for clients",
+    //     "Collaborated with designers to translate mockups to code"
+    //   ],
+    //   technologies: ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "MySQL"],
+    //   website: "https://localwebsolutions.com"
+    // }
   ];
 
   return (

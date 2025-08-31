@@ -20,11 +20,11 @@ const Hero = () => {
             </div>
             
             <h1 className="hero-title">
-              Hi, I'm <span className="gradient-text">Your Name</span>
+              Hi, I'm <span className="gradient-text">Mauricio Macias</span>
             </h1>
             
             <h2 className="hero-subtitle">
-              Full Stack Developer & UI/UX Designer
+              Full Stack Developer
             </h2>
             
             <p className="hero-description">
@@ -42,13 +42,13 @@ const Hero = () => {
             </div>
             
             <div className="hero-social">
-              <a href="https://github.com" className="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/TheErrorMaster" className="social-link" target="_blank" rel="noopener noreferrer">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" className="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/mauricio-macias-679681185/" className="social-link" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:your.email@example.com" className="social-link">
+              <a href="mailto:mauricio.macias2535@gmail.com" className="social-link">
                 <Mail size={20} />
               </a>
             </div>
@@ -70,13 +70,13 @@ const Hero = () => {
                     <span className="code-keyword">const</span> <span className="code-variable">developer</span> = {'{'}
                   </div>
                   <div className="code-line code-indent">
-                    <span className="code-property">name</span>: <span className="code-string">'Your Name'</span>,
+                    <span className="code-property">name</span>: <span className="code-string">'Mauricio Macias'</span>,
                   </div>
                   <div className="code-line code-indent">
-                    <span className="code-property">skills</span>: [<span className="code-string">'React'</span>, <span className="code-string">'Node.js'</span>],
+                    <span className="code-property">skills</span>: [<span className="code-string">'Frontend'</span>, <span className="code-string">'Backend'</span>],
                   </div>
                   <div className="code-line code-indent">
-                    <span className="code-property">passion</span>: <span className="code-string">'Building amazing things'</span>
+                    <span className="code-property">passion</span>: <span className="code-string">'Building the next big thing'</span>
                   </div>
                   <div className="code-line">
                     {'}'}

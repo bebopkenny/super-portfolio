@@ -47,6 +47,9 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('contact')} className="nav-link">
               Contact
             </button>
+            <button onClick={() => window.open('https://theerrormaster.github.io/MauricioMaciasResume.pdf', '_blank', 'noopener,noreferrer')} className="nav-link">
+              Resume
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
